@@ -1,0 +1,78 @@
+
+.centerbox1340 {max-width: 1340px; margin: 0 auto;}
+
+
+
+@media screen and (max-width: 768px) {
+    
+
+.mo_menu.on span {background: rgba(255,255,255,0);}
+.mo_menu.on span::before {top: 0; transform: rotate(135deg);}
+.mo_menu.on span::after {top: 0; transform: rotate(-135deg);}
+
+.mo_icon{position: absolute;left: 1vw; top: 1vw;width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;z-index: 1 ;}  
+.mo_icon span{font-size: 5vw;color: #fff;}
+.mo_menu {position: absolute; right:1vw; top: 1vw; width: 40px; height: 40px; z-index: 1; cursor: pointer;}
+.mo_menu span {position: absolute; width: 20px; height: 3px; background: #fff; left: 50%; top: 50%; transform: translate(-50%,-50%); transition: 0.3s;}
+.mo_menu span::before,
+.mo_menu span::after {content: ""; position: absolute; width: 100%; height: 100%; background: #fff;left: 0px; transition: 0.3s;}
+
+.mo_menu span::before {top: -8px; }
+.mo_menu span::after {top: 8px;}
+
+
+header .mo_gnb_box {position: fixed; width: 100%; height: 100vh; background: rgba(0,0,0,0.9); left: 0; top: 0; display: block;display: none;}
+header .mo_gnb_box .mo_gnb {width: 280px; height: calc(100% - 80px); background: #fff; margin-top: 80px; margin-left: -280px; transition: 0.3s;}
+header .mo_gnb_box.on .mo_gnb {margin-left: 0;}
+
+header .mo_gnb_box .mo_gnb li {}
+header .mo_gnb_box .mo_gnb li a {display: block; padding: 30px; border-bottom: 1px solid #eee;}
+.gnb li a{font-size: 1rem;}
+.mo_gnb li a{font-size: 3rem;}
+
+header .top_menu .logo {
+    width: 30vw;
+    margin-bottom: 0;
+    height: 30px;
+    justify-content: center
+}
+
+section #section1 .centerbox1200 .text_box2 li:nth-child(2), section #section1 .centerbox1200 .text_box3 li:nth-child(2), section #section1 .centerbox1200 .text_box4 li:nth-child(2)
+{margin: 3vw 0 3vw 0 !important}
+
+
+}
+
+section #section1 .centerbox1200 .text_box2 .first::before,
+    section #section1 .centerbox1200 .text_box3 .first::before,
+    section #section1 .centerbox1200 .text_box4 .first::before
+    {content: "";
+       position: absolute;
+       width: 8vw;
+       height: 2px;
+       background: #767676;
+       bottom: 0;
+       left: 50%;
+       transform: translateX(-50%);
+   
+   
+   }
+
+   
+   @media screen and (max-width: 1000px){
+    header nav .gnb li{font-size: 17px;}
+    header nav .gnb li a{padding: 10px 15px;}
+    nav .gnb li a{display: block;}
+    header nav .gnb li{display: none;}
+    .centerbox1340 ,
+    .centerbox1200 {width: auto;}
+    .centerbox1200 form .plus a{font-size: 1.5vw;}
+    footer .logo figure{width: 80%;}
+   }
+
+
+   .btn1 {padding: 15px 75px; background: #414141; border-radius: 50px; color: #fff; font-size: 16px; margin-top: 50px;}
+   .btnc1 {background: #262C32;padding: 15px 75px; border-radius: 50px; color: #fff; font-size: 16px;}
+   .text_input1{padding: 12px 16px ;background: none;width: 100%;box-sizing: border-box;font-size: 16px;border-radius: 8px;border: 1px solid #888;background-color: transparent;}
+   .inputc1{background: #ddd;}
+   .radio_check{width: 20px;height: 20px;}
